@@ -68,13 +68,6 @@ class Comments extends Component {
     } else {
       bg = {};
     }
-    let caption = {};
-    if (this.props.dark === 1) {
-      caption = {
-        backgroundColor: "white",
-        color: "black",
-      };
-    }
     return (
       <div style={bg}>
         <div className="row">
