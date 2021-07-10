@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Redirect, Route, Link, withRouter } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 class NavBar extends Component {
   state = {
@@ -19,23 +19,7 @@ class NavBar extends Component {
     return "black";
   };
   render() {
-    let normal = {
-      marginInline: 25,
-      fontSize: "15px",
-      marginTop: 5,
-      padding: 5,
-      cursor: "pointer",
-    };
-    let sel = {
-      marginInline: 25,
-      fontSize: "15px",
-      marginTop: 5,
-      fontWeight: "bold",
-      backgroundColor: "#7CB342",
-      padding: 5,
-      borderRadius: 10,
-      cursor: "pointer",
-    };
+    
     let navClass = {};
     if (this.props.dark === 1) {
       navClass = {
@@ -65,7 +49,7 @@ class NavBar extends Component {
       <div>
         <nav className="navbar navbar-expand-lg" style={navClass}>
           <Link className="navbar-brand" to="/" style={brand}>
-            <img src={italyImg} style={{ width: "7%" }} /> <b style={{fontSize:"30px"}}>ITALY</b>
+            <img src={italyImg} style={{ width: "7%" }} alt="italy"/> <b style={{fontSize:"30px"}}>ITALY</b>
           </Link>
 
           <div className="navbarSupportedContent">
