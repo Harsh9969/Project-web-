@@ -53,6 +53,7 @@ class More extends Component {
                   {" "}
                   <img
                     src={place["img"]}
+                    alt="img2"
                     style={{
                       width: "130%",
                       borderRadius: "20px",
